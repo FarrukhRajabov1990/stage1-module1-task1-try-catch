@@ -24,7 +24,7 @@ public class ParseIntegers {
             int number;
             try {
                 number = Integer.parseInt(next);
-            } catch (ClassCastException e) {
+            } catch (NumberFormatException e) {
                 justWords = justWords + " " + next;
                 throw new RuntimeException(e);
             }
