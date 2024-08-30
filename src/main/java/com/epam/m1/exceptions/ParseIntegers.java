@@ -25,7 +25,7 @@ public class ParseIntegers {
             try {
                 number = Integer.parseInt(next);
             } catch (NumberFormatException e) {
-                justWords = justWords + next;
+                justWords = justWords + " " + next;
                 e.getStackTrace();
             }
             sum += number;
